@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f5f7;
+    font-family: "Cairo", sans-serif;
+}
+
+.it-container {
+    width: 420px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.it-logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.it-title {
+    font-size: 26px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.it-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.it-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.it-btn {
+    width: 100%;
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.it-btn:hover {
+    background: #1664c4;
+}
+
+.it-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 14px;
+}
+/* ===== عنوان فرعي ===== */
+.it-sub-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #1a73e8;
+}
+
+/* ===== القائمة والجداول ===== */
+.it-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.it-table th, .it-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.it-table th {
+    background: #1a73e8;
+    color: white;
+}
+
+.it-table tr:hover {
+    background: #f3f7ff;
+}
+
+.it-edit {
+    background: #ffa726;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.it-delete {
+    background: #e53935;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم شكوى - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="header">
+    <img src="assets/logo.png" class="logo">
+    <h2>تقديم شكوى</h2>
+</div>
+
+<div class="welcome-box">
+    يرجى ملء تفاصيل الشكوى أدناه:
+</div>
+
+<div class="complaint-box">
+
+    <form id="complaint-form">
+
+        <label>اسم المواطن</label>
+        <input type="text" id="c-name" placeholder="اكتب اسمك" required>
+
+        <label>نوع الخدمة</label>
+        <select id="c-type" required>
+            <option value="">اختر نوع الخدمة</option>
+            <option value="الماء">الماء</option>
+            <option value="الكهرباء">الكهرباء</option>
+            <option value="البلدية">البلدية</option>
+            <option value="البيئة">البيئة</option>
+        </select>
+
+        <label>وصف الشكوى</label>
+        <textarea id="c-details" placeholder="اكتب وصف الشكوى" required></textarea>
+
+        <label>إرفاق صورة (اختياري)</label>
+        <input type="file" id="c-image" accept="image/*">
+
+        <button type="button" class="btn" onclick="submitComplaint()">
+            إرسال الشكوى
+        </button>
+
+        <a href="dashboard-citizen.html" class="link">رجوع إلى لوحة المواطن</a>
+
+    </form>
+
+</div>
+
+<script src="js/citizen.js"></script>
+<script src="js/citizen.js"></script>
+
+</body>
+</html>

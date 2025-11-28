@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الموظف - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="header">
+    <img src="assets/logo.png" class="logo">
+    <h2>لوحة الموظف</h2>
+</div>
+
+<div class="welcome-box">
+    أهلاً بك في لوحة الموظف 👋  
+</div>
+
+<div class="complaint-box">
+
+    <h3 style="margin-bottom: 15px;">قائمة الشكاوى</h3>
+
+    <table class="emp-table" id="emp-complaints">
+        <thead>
+            <tr>
+                <th>رقم الشكوى</th>
+                <th>الاسم</th>
+                <th>الخدمة</th>
+                <th>الوصف</th>
+                <th>الحالة</th>
+                <th>تحديث</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- الشكاوى تظهر هنا -->
+        </tbody>
+    </table>
+
+</div>
+
+<a href="login.html" class="link" style="margin:20px; display:block; text-align:center;">
+    تسجيل خروج
+</a>
+
+<script src="js/employee.js"></script>
+
+</body>
+</html>

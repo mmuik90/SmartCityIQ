@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دخول قسم IT - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/it.css">
+</head>
+
+<body>
+
+<div class="it-container">
+
+    <img src="assets/logo.png" class="it-logo">
+
+    <h2 class="it-title">قسم تكنولوجيا المعلومات (IT)</h2>
+
+    <p class="it-description">
+        هذه الواجهة خاصة فقط بقسم الـ IT.  
+        من هنا يتم إنشاء حسابات الموظفين والمدراء والتحكم بهم.
+    </p>
+
+    <form id="it-login-form" class="it-form">
+
+        <input type="text" id="it-user" placeholder="اسم مستخدم IT" required>
+
+        <input type="password" id="it-pass" placeholder="كلمة المرور" required>
+
+        <button type="button" class="it-btn" onclick="loginIT()">
+            تسجيل الدخول
+        </button>
+
+        <a href="login.html" class="it-link">رجوع إلى تسجيل الدخول</a>
+
+    </form>
+
+</div>
+
+<script src="js/it.js"></script>
+
+</body>
+</html>

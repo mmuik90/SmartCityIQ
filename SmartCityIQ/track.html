@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تتبع الشكوى - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="header">
+    <img src="assets/logo.png" class="logo">
+    <h2>تتبع الشكوى</h2>
+</div>
+
+<div class="welcome-box">
+    أدخل رقم الشكوى لتتبع حالتها:
+</div>
+
+<div class="complaint-box">
+
+    <label>رقم الشكوى</label>
+    <input type="number" id="track-id" placeholder="اكتب رقم الشكوى" required>
+
+    <button class="btn" onclick="trackComplaint()">تتبع الشكوى</button>
+
+    <div id="track-result" class="track-result"></div>
+
+    <a href="dashboard-citizen.html" class="link">رجوع إلى لوحة المواطن</a>
+</div>
+
+<script src="js/citizen.js"></script>
+<script>
+/* =============================
+    تتبع شكوى — مؤقت لحد ما نربط قاعدة البيانات
+============================== */
+
+function trackComplaint() {
+    let id = document.getElementById("track-id").value;
+
+    if (id === "") {
+        alert("الرجاء إدخال رقم الشكوى");
+        return;
+    }
+
+    // حالة وهمية مؤقتة
+    let dummyStatus = `
+        <div style="
+            background:#e9f0fc;
+            padding:15px;
+            margin-top:15px;
+            border-radius:10px;
+            line-height:1.8;
+            font-size:15px;
+        ">
+            <strong>رقم الشكوى:</strong> ${id}<br>
+            <strong>الحالة:</strong> قيد المراجعة<br>
+            <strong>آخر تحديث:</strong> قبل 3 ساعات<br>
+            <strong>القسم:</strong> البلدية
+        </div>
+    `;
+
+    document.getElementById("track-result").innerHTML = dummyStatus;
+}
+</script>
+
+</body>
+</html>

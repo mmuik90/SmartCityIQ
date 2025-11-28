@@ -1,0 +1,198 @@
+/* ===== الخط الأساسي ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f5f7;
+    font-family: "Cairo", sans-serif;
+}
+
+/* ===== العنوان ===== */
+.header {
+    background: #1a73e8;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header .logo {
+    width: 45px;
+}
+
+/* ===== ترحيب بالمواطن ===== */
+.welcome-box {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== كروت الخدمات ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+.card {
+    background: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 14px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    background: #e9f0fc;
+}
+
+.card img {
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #1a73e8;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+/* ===== تسجيل خروج ===== */
+.logout {
+    background: #ffebee;
+}
+
+.logout:hover {
+    background: #ffcdd2;
+}
+/* ===== صفحة تقديم الشكوى ===== */
+
+.complaint-box {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.complaint-box label {
+    display: block;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.complaint-box input,
+.complaint-box select,
+.complaint-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.complaint-box textarea {
+    height: 120px;
+    resize: none;
+}
+.track-result {
+    margin-top: 20px;
+}
+/* ===== صفحة حول المنصة ===== */
+
+.about-main {
+    background: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.about-logo {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    text-align: right;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #333;
+}
+/* ===== جدول الشكاوى للموظف ===== */
+.emp-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.emp-table th, .emp-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.emp-table th {
+    background: #1a73e8;
+    color: white;
+}
+
+.emp-table tr:hover {
+    background: #e9f0fc;
+}
+
+.emp-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-review { background: #ffa726; }
+.btn-done { background: #4caf50; }
+.btn-reject { background: #e53935; }
+/* ===== صندوق الأقسام للمدير ===== */
+.section-box {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.section-box h3 {
+    margin-bottom: 15px;
+    color: #1a73e8;
+}

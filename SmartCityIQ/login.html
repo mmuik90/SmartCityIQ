@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <!-- شعار -->
+    <img src="assets/logo.png" class="logo" alt="SmartCityIQ Logo">
+
+    <h2 class="title">SmartCityIQ</h2>
+
+    <!-- وصف بسيط -->
+    <p class="description">
+        منصة المدينة الذكية التي تجمع خدمات المواطن،  
+        وتوحّد الدخول للخدمات في مكان واحد.  
+        يمكنك الدخول كمواطن، أو استخدام بيانات الموظف/الإدارة  
+        التي يصدرها قسم تكنولوجيا المعلومات (IT).
+    </p>
+
+    <!-- التبويبات -->
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab('citizen')">مواطن</button>
+        <button class="tab" onclick="switchTab('employee')">موظف</button>
+        <button class="tab" onclick="switchTab('admin')">إدارة</button>
+    </div>
+
+    <!-- Citizen Login -->
+    <form id="citizen-form" class="form active">
+        <input type="email" id="citizen-email" placeholder="البريد الإلكتروني" required>
+        <input type="password" id="citizen-password" placeholder="كلمة المرور" required>
+        <button type="button" class="btn" onclick="loginCitizen()">دخول المواطن</button>
+        <a href="register.html" class="link">إنشاء حساب جديد</a>
+    </form>
+
+    <!-- Employee Login -->
+    <form id="employee-form" class="form">
+        <input type="text" id="employee-user" placeholder="اسم المستخدم" required>
+        <input type="password" id="employee-pass" placeholder="كلمة المرور" required>
+        <button type="button" class="btn" onclick="loginEmployee()">دخول الموظف</button>
+    </form>
+
+    <!-- Admin Login -->
+    <form id="admin-form" class="form">
+        <input type="text" id="admin-user" placeholder="اسم المستخدم" required>
+        <input type="password" id="admin-pass" placeholder="كلمة المرور" required>
+        <button type="button" class="btn" onclick="loginAdmin()">دخول الإدارة</button>
+    </form>
+
+    <!-- حول المنصة -->
+    <div class="about-box">
+        <h3>حول المنصة</h3>
+        <p>
+            SmartCityIQ هي منصة ويب متكاملة لإدارة خدمات المدينة الذكية،  
+            مثل: تقديم الشكاوى، تتبع الطلبات، دفع الفواتير،  
+            إدارة الموظفين والمدراء عبر نظام موحد وسهل الاستخدام.
+        </p>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

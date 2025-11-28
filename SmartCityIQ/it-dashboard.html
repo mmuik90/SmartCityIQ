@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة IT - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/it.css">
+</head>
+
+<body onload="loadAccounts()">
+
+<div class="it-container">
+
+    <h2 class="it-title">لوحة تحكم قسم IT</h2>
+
+    <p class="it-description">
+        من هنا يمكنك إدارة حسابات الموظفين والمدراء.
+    </p>
+
+    <hr><br>
+
+    <!-- إضافة حساب جديد -->
+    <h3 class="it-sub-title">إضافة حساب جديد</h3>
+
+    <form class="it-form">
+
+        <input type="text" id="acc-username" placeholder="اسم المستخدم" required>
+        <input type="password" id="acc-password" placeholder="كلمة المرور" required>
+
+        <select id="acc-role">
+            <option value="employee">موظف</option>
+            <option value="admin">مدير</option>
+        </select>
+
+        <button type="button" class="it-btn" onclick="addAccount()">
+            إضافة الحساب
+        </button>
+
+    </form>
+
+    <br><hr><br>
+
+    <!-- عرض الحسابات -->
+    <h3 class="it-sub-title">جميع الحسابات</h3>
+
+    <table class="it-table" id="accounts-table">
+        <thead>
+            <tr>
+                <th>الاسم</th>
+                <th>الصلاحية</th>
+                <th>تعديل</th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- الحسابات تظهر هنا -->
+        </tbody>
+    </table>
+
+    <br>
+
+    <a href="it-login.html" class="it-link">تسجيل خروج</a>
+
+</div>
+
+<script src="js/it.js"></script>
+
+</body>
+</html>

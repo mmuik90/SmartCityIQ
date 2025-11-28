@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل حساب جديد - SmartCityIQ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <img src="assets/logo.png" class="logo" alt="logo">
+
+    <h2 class="title">إنشاء حساب مواطن</h2>
+
+    <p class="description">
+        قم بإنشاء حساب جديد للوصول إلى خدمات SmartCityIQ.
+    </p>
+
+    <form id="register-form" class="form active">
+
+        <input type="text" id="reg-name" placeholder="الاسم الكامل" required>
+
+        <input type="email" id="reg-email" placeholder="البريد الإلكتروني" required>
+
+        <input type="password" id="reg-pass" placeholder="كلمة المرور" required>
+
+        <input type="text" id="reg-phone" placeholder="رقم الهاتف" required>
+
+        <input type="text" id="reg-address" placeholder="العنوان" required>
+
+        <button type="button" class="btn" onclick="registerCitizen()">
+            إنشاء حساب
+        </button>
+
+        <a href="login.html" class="link">لديك حساب سابق؟ تسجيل الدخول</a>
+    </form>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/citizen.js"></script>
+
+</body>
+</html>
